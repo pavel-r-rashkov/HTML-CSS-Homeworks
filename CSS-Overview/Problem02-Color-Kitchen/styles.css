@@ -1,0 +1,214 @@
+body {
+	background: url(images/colorful_dots_on_black.jpg) 0 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+
+body aside {
+	width: 20%;
+	float: left;
+}
+
+body section {
+	width: 80%;
+	float: right;
+}
+
+section article {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	border-radius: 30px;
+	margin: 0px 40px;
+	margin-bottom: 10px;
+	font-size: 17.5px;
+}
+
+article header {
+	background-color: red;
+	border-radius: 10px;
+	font-size: 28px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+body>header {
+	background-color: rgb(0, 128, 0);
+	color: yellow;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	height: 80px;
+	position: relative;
+}
+
+body>header:before {
+	content: " ";
+    display: block;
+    background: rgb(255, 0, 0);
+    height: 80px;
+    width: 33%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+body>header:after {
+	content: " ";
+    display: block;
+    background: rgb(0, 0, 255);
+    height: 80px;
+    width: 33%;
+    position: absolute;
+    top: 0px;
+    left: 67%;
+}
+
+nav {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 20px;
+	border-radius: 30px;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+nav ul {
+	padding-left: 0px;
+}
+
+nav header {
+	font-size: 22px;
+	text-decoration: underline;	
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+nav ul li {
+	list-style: none;
+	background-image: url(images/bullet.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-position: 5px;
+	padding: 8px;
+	padding-left: 30px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+	cursor: default;
+}
+
+nav ul li:nth-child(1):hover {
+	background-color: red;
+	border-radius: 10px;
+}
+
+nav ul li:nth-child(2):hover {
+	background-color: rgb(255, 165, 0);
+	border-radius: 10px;
+}
+
+nav ul li:nth-child(3):hover {
+	background-color: yellow;
+	border-radius: 10px;
+}
+
+nav ul li:nth-child(4):hover {
+	background-color: green;
+	border-radius: 10px;
+}
+
+nav ul li:nth-child(5):hover {
+	background-color: blue;
+	border-radius: 10px;
+}
+
+nav ul li:nth-child(6):hover {
+	background-color: rgb(128, 0, 128);
+	border-radius: 10px;
+}
+
+nav a:visited {
+	color: grey;
+}
+
+nav ul {
+	margin: 0px;
+}
+
+section article:first-child {
+	margin-top: 40px;
+}
+
+section article:last-child {
+	margin-bottom: 20px;
+}
+
+article>div:first-letter {
+	font-size: 60px;
+}
+
+article>div:first-line {
+	font-style: italic;
+}
+
+#webColors {
+	color: white;
+	background-color: rgb(255, 0, 0);
+}
+
+#webSafeColors {
+	color: black;
+	background-color: rgb(255, 165, 0);
+}
+
+#RGB {
+	color: black;
+	background-color: rgb(255, 255, 0);
+}
+
+#RGBA {
+	color: white;
+	background-color: rgb(0, 128, 0);
+}
+
+#\#HSLHSV {
+	color: white	;
+	background-color: rgb(0, 0, 255);
+}
+
+#\#lorem {
+	color: white;
+	background-color: rgb(128, 0, 128);
+}
+
+article footer a{
+	color: grey;
+	font-style: italic;
+}
+
+article footer {
+	padding-top: 10px;
+}
+
+section article:last-child span:nth-child(2) {
+	color: rgb(14, 18, 160);
+	font-style: italic;
+}
+
+section article:last-child span:nth-child(2):before {
+	content: "\" ";
+	color: rgb(14, 18, 160);
+	font-style: italic;
+}
+
+section article:last-child span:nth-child(3):before {
+	content: " \"";
+	color: rgb(14, 18, 160);
+	font-style: italic;
+}
