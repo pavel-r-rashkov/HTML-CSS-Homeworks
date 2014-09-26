@@ -1,0 +1,30 @@
+body {
+	font-family: "Calibri";
+	background-image: url('SlideBackground.png');
+	background-size:   cover;               
+    background-repeat: no-repeat;
+	padding-left: 10px;
+	color: #FFCC33;
+	
+}
+div {
+	font-family: "Consolas";
+	color: #FFFFCC;
+	background: rgb(64,64,64);
+	border: 1px solid;
+	border-color: gray;
+	margin-left: 20px;
+	margin-right: 70px;
+	padding: 5px;
+	font-size: 25px;
+}
+span{
+	color: white;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-weight: normal;
+	font-size: 35px;
+}
