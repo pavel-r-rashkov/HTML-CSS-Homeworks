@@ -1,0 +1,71 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+#sky {
+	background-position: -280px -100px;
+	background: radial-gradient(at 20% 25%, rgb(249, 248, 190), rgb(62, 152, 222), rgb(0, 104, 219));
+	width: 900px;
+	height: 600px;
+	z-index: -1;
+	position: absolute;
+	top: 0px; left: 0px;
+}
+
+#beach {
+	width: 900px;
+	height: 600px;
+	z-index: 100;
+}
+
+#vladoG {
+	position: absolute;
+	top: 215px; left: 35px;
+	z-index: 1;
+}
+
+#petya {
+	position: absolute;
+	top: 185px; left: 170px;
+	z-index: 2;
+}
+
+#tedi {
+	position: absolute;
+	top: 355px; left: 250px;
+	z-index: 3;
+}
+
+#nakov {
+	position: absolute;
+	top: 145px; left: 400px;
+	z-index: 1;
+}
+
+#alex {
+	position: absolute;
+	top: 190px; left: 480px;
+	z-index: 5;
+}
+
+#vladoK {
+	position: absolute;
+	top: 220px; left: 660px;
+	z-index: 4;
+}
+
+h1 {
+	position: absolute;
+	top: -25px;
+	left: 470px;
+	font-family: HawaiiFont;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgb(253, 188, 33);
+}
+
+@font-face {
+  font-family: HawaiiFont;
+  src: url('resources/Animated.ttf'); 
+}

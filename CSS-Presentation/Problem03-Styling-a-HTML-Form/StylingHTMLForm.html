@@ -1,0 +1,60 @@
+<html>
+<head>	
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<title>Styling HTML Form</title>
+</head>
+<body>
+	<div id="container">
+		<span class="steps">Step 1: Your details</span>
+		<div class="wrapper">
+			<label>Name</label>
+			<input type="text" class="textField" placeholder="First and last name">
+		</div>
+		<div class="wrapper">
+			<label>Email</label>
+			<input type="text" class="textField" placeholder="example@domain.com">
+		</div>
+		<div class="wrapper">
+			<label>Phone</label>
+			<input type="text" class="textField" placeholder="eg. +447500000000">
+		</div>
+		<span class="steps">Step 2: Delivery address</span>
+		<div class="wrapper" id="address">
+			<label>Address</label>
+			<textarea type="text" class="textField" id="addressField"></textarea>
+		</div>
+		<div class="wrapper">
+			<label>Post code</label>
+			<input type="text" class="textField">
+		</div>
+		<div class="wrapper">
+			<label>Country</label>
+			<input type="text" class="textField">
+		</div>
+		<span class="steps">Step 3: Card details</span>
+		<div class="wrapper" id="cardType">
+			<label>Card type</label>
+			<div id="cardChoice">
+				<input type="radio" name="cardSelect"><img src="images/visa.png" class="cardImg">VISA
+				<input type="radio" id="amex" name="cardSelect"><img src="images/amex.png" class="cardImg">AmEx
+				<input type="radio" name="cardSelect"><img src="images/mastercard.png" class="cardImg">Mastercard
+			</div>
+		</div>
+		<div class="wrapper">
+			<label>Card number</label>
+			<input type="text" class="textField">
+		</div>
+		<div class="wrapper">
+			<label>Security code</label>
+			<input type="text" class="textField">
+		</div>
+		<div class="wrapper">
+			<label>Name on card</label>
+			<input type="text" class="textField" placeholder="exact name as on the card">
+		</div>
+		<button id="buy">Buy it!</button>
+	</div>
+	
+</body>
+</html>

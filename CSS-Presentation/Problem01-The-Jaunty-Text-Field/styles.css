@@ -1,0 +1,141 @@
+#container {
+	border-top: 6px yellow;
+	border-top-style: dotted;
+	border-left: 5px red;
+	border-left-style: dashed;
+	border-right: 10px green;
+	border-right-style: solid;
+	border-bottom: 8px blue;
+	border-bottom-style: double;
+
+	width: 510px;
+	height: 190px;
+	font-family: Arial;
+	box-shadow: 16px 16px 6px #3F3F3F;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 9px 9px 9px #C0C0C0;
+}
+
+#rainBowBlue {
+	border: 2px solid blue;
+	border-radius: 42px;
+	width: 454px;
+	height: 84px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#rainBowGreen {
+	border: 2px solid green;
+	border-radius: 40px;
+	width: 450px;
+	height: 80px;
+}
+
+#rainBowYellow {
+	border: 2px solid yellow;
+	border-radius: 38px;
+	width: 446px;
+	height: 76px;
+}
+
+#rainBowRed {
+	border: 2px solid red;
+	border-radius: 36px;
+	width: 442px;
+	height: 72px;
+}
+
+span {
+	display: block;
+	text-align: center;
+	margin: 10px;
+	text-shadow: 9px 9px 9px #C0C0C0;
+}
+
+.textField {
+	border: 2px solid;
+	background-color: rgb(216, 146, 26);
+	border-top-color: rgb(255, 166, 0); 
+	border-left-color: rgb(255, 166, 0); 
+	border-bottom-color: rgb(167, 103, 0);
+	border-right-color: rgb(167, 103, 0); 
+	width: 160px;
+}
+
+#leftText {
+	margin-left: 55px;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+   text-align: center;
+}
+
+:-moz-placeholder { 
+   color: black;
+   text-align: center;  
+}
+
+::-moz-placeholder {
+   color: black; 
+   text-align: center;
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+   text-align: center;
+}
+
+.balloon {
+	opacity: 0.7;
+	background-color: grey;
+	color: white;
+	border: 2px white;
+	border-style: dashed;
+}
+
+#small {
+	height: 12px;
+	width: 12px;
+	border-radius: 15px;
+	position: absolute;
+	left: 405px;
+	top: 127px;
+	box-shadow: 0 0 0 4px grey;
+}
+
+#middle {
+	height: 22px;
+	width: 22px;
+	border-radius: 15px;
+	position: absolute;
+	left: 445px;
+	top: 96px;
+	box-shadow: 0 0 0 4px grey;
+}
+
+#large {
+	height: 35px;
+	width: 85px;
+	border-radius: 600px;
+	font-family: Arial;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	left: 485px;
+	top: 40px;
+	box-shadow: 0 0 0 4px grey;
+}
+
+
+
+
+
+
+
