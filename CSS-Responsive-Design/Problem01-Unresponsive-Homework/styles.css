@@ -1,0 +1,220 @@
+* {margin: 0px; padding: 0px}
+
+body {
+	background: #6698FF;
+	font-family: Arial;
+}
+
+#wrapper {
+	background: #6698FF;
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 30px;
+	overflow: hidden;
+	padding: 0px 5px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: white;
+	font-size: 32px;
+}
+
+img {
+	width: 210px;
+}
+
+nav {
+	overflow: hidden;
+	margin: 10px 0px 15px 0px;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 4px 10px 4px 10px;
+	background: white;
+	border: 2px solid black;
+	margin-right: 5px;
+}
+
+nav ul li:last-child {
+	margin-right: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+nav:after {
+	content: ' ';
+	display: block;
+	height: 2px;
+	width: 100%;
+	background: black;
+	margin-top: 14px;
+}
+
+#wrapper>section {
+	width: 75%;
+	float: left;
+}
+
+#wrapper>aside {
+	width: 25%;
+	float: right;
+}
+
+article, aside>div, footer {
+	border: 2px solid black;
+	background: #E0EAFE;
+}
+
+article {
+	margin: 0px 8px 10px 0px;
+	padding: 10px 10px 30px 10px;
+}
+
+article h1 {
+	margin: 5px 0px 15px 0px;
+	font-size: 21px;
+}
+
+article p {
+	font-size: 13px;
+}
+
+article p:nth-child(1):before {
+	content: '\00a0\00a0\00a0\00a0';
+}
+
+aside>div {
+	margin-left: 8px;
+	padding: 15px 10px;
+}
+
+aside ul {
+	list-style: none;
+}
+
+aside li {
+	padding-bottom: 5px;
+}
+
+aside a {
+	text-decoration: none;
+	font-size: 13px;
+	color: black;
+}
+
+footer {
+	clear: both;
+	font-size: 12px;
+	height: 40px;
+}
+
+footer h2 {
+	margin-top: 18px;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 960px){
+	#wrapper {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 780px){
+
+	#wrapper section {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	#wrapper article {
+		margin-right: 0px;
+	}
+
+	#wrapper aside {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 10px;
+		background: red;
+	}
+
+	#wrapper aside div {
+		margin-left: 0px;
+	}
+
+	#wrapper aside li {
+		display: inline-block;
+		width: 24%;
+		vertical-align: top;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 640px){
+
+	#wrapper article h1 {
+		text-align: center;
+	}
+
+	#wrapper aside {
+		margin-bottom: 25px;
+	}
+
+	#wrapper aside li {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	#wrapper aside li:last-child {
+		margin-bottom: 0px;
+	}
+	
+	nav ul {
+		width: 80%;
+		margin-right: 10%;
+		
+	}
+
+	nav ul li {
+		padding-left: 0px;
+		padding-right: 0px;
+		display: block;
+		width: 100%;
+		text-align: center;
+		border: 1px solid black;
+	}
+	
+	nav:after {
+		height: 1px;
+	}
+
+	#wrapper nav {
+		margin-bottom: 25px;
+	}
+
+	article, aside>div, footer {
+		border: 1px solid black;
+	}
+
+	header h1 {
+		text-align: center;
+	}
+
+	header h1 span {
+		display: block;
+	}
+}
