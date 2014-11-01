@@ -1,0 +1,148 @@
+* {padding: 0px; margin: 0px;}
+
+header {
+	
+	background: #234465;
+	color: white;
+	height: 110px;
+	font-family: Tahoma, sans-serif;
+}
+
+#logo {
+	float: left;
+	height: 100%;
+}
+
+#logo img {
+	width: 315px;
+	height: 110px;
+}
+
+#menus {
+	float: right;
+	height: 100%;
+	padding: 0px;
+}
+
+#top {
+	padding-top: 20px;
+	height: 35px;
+		
+}
+
+#top img {
+	width: 24px;
+	height: 28px;
+	position: relative;
+	top: 8px;
+}
+
+#searchBar {
+	float: right;
+	width: 290px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #DCDCDC;
+	background: white;
+	margin-right: 45px;
+}
+
+#top ul {
+	float: right;
+}
+
+#search {
+	height: 28px;
+	width: 245px;
+	border: none;
+	margin-left: 10px;
+	outline: none;
+	position: relative;
+	top: -10px;
+
+}
+
+#magnifier {
+	margin-top: 1px;
+	height: 28px;
+	width: 28px;
+	border: none;
+	border-left: 1px solid #DCDCDC;
+	background-image: url(images/magnifier.png);
+	background-repeat: no-repeat;
+	background-size: 28px 28px;
+}
+
+#bottom {
+	padding-top: 10px;
+	height: 45px;
+	text-align: right;
+}
+
+header ul {
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+header li {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 40px;
+	letter-spacing: 1px;
+	color: white;
+	height: 20px;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+}
+
+header #bottom>ul>li {
+	padding: 5px;
+	position: relative;
+}
+
+header #bottom>ul>li:hover {
+	border-radius: 5px;
+	background: #4CA0DB;
+}
+
+
+header nav ul>li ul {
+	display: none;
+	position: absolute;
+	width: 210px;
+	text-align: left;
+	top: 30px;
+	left: 0px;
+}
+
+header nav ul>li ul li{
+	width: 100%;
+	margin: 0;
+	padding: 5px 0px;
+}
+
+header nav ul>li ul li:hover{
+	background: #4CA0DB;
+}
+
+header nav ul>li ul li a{
+	color: black;
+	float: left;
+	width: 100%;
+	font-size: 12px;
+}
+
+header nav ul>li:hover>ul {
+	display: block;
+	border: 1px solid black;
+	background: white;
+}
+
+header nav ul>li:last-child:hover>ul {
+	left: -115px;
+}

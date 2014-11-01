@@ -2,6 +2,7 @@
 
 body {
 	background: url(images/background-flowers.jpg);
+	font-size: 16px;
 }
 
 #wrapper {
@@ -36,7 +37,7 @@ body {
 	text-align: right;
 	margin-right: 5px;
 	margin-bottom: 12px;
-	font-size: 35px;
+	font-size: 2.1875em;
 }
 
 #wrapper>header h1 a {
@@ -89,7 +90,7 @@ section {
 }
 
 .right ul {
-	font-size: 14px;
+	font-size: 0.875em;
 	margin-left: 5px;
 	padding: 10px;
 	padding-top: 25px;
@@ -97,7 +98,7 @@ section {
 }
 
 .left ul {
-	font-size: 14px;
+	font-size: 0.875em;
 	margin-right: 5px;
 	list-style: none;
 	padding: 10px;
@@ -109,13 +110,12 @@ article {
 }
 
 article h1 {
-	font-size: 25px;
+	font-size: 1.5625em;
 }
 
 .left ul li a {
 	color: black;
 	text-decoration: none;
-	font-size: 14px;
 }
 
 .left ul li a img {
@@ -134,8 +134,8 @@ article div {
 
 article div img {
 	margin-bottom: 5px;
-	flex-basis: 24%;
-	height: 90px;
+	width: 24%;
+	height: 100%;
 }
 
 footer {
@@ -149,7 +149,7 @@ footer {
 
 footer h2 {
 	margin-top: 18px;
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 footer a {
@@ -163,12 +163,16 @@ footer a {
 	}
 
 	article div img {
-		flex-basis: 32%;
+		width: 30%;
 	}
 }
 
 @media only screen and (max-width: 780px) {
 	
+	body {
+		font-size: 14px;
+	}
+
 	section {
 		order: 2;
 		flex-basis: 100%;
@@ -204,13 +208,14 @@ footer a {
 		justify-content: center;
 	}
 
-	article div img {
-		height: 190px;
-	}
 }
 
 @media only screen and (max-width: 640px) {
 	
+	body {
+		font-size: 12px;
+	}
+
 	nav ul {
 		width: 90%;
 		margin-right: auto;
@@ -235,8 +240,7 @@ footer a {
 	}
 
 	article div img {
-		flex-basis: 48%;
-		height: 140px;
+		width: 49%;
 	}
 }
 

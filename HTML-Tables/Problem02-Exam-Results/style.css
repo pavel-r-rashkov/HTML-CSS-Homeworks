@@ -1,0 +1,22 @@
+table {
+	height: 250px;
+	width: 380px;
+	border: solid 1px;
+	font-family: arial;
+}
+
+thead{
+	font-size: 22px;
+}
+
+th {
+	border: solid 1px;
+}
+
+td {
+	border: solid 1px;	
+}
+
+tfoot{
+	text-align: right;
+}

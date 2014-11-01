@@ -1,0 +1,35 @@
+
+table {
+	height: 240px;
+	width: 394px;
+	border: solid 1px rgb(200, 200, 200);
+	font-family: arial;
+}
+
+th {
+	font-size: 30px;
+	text-align: left;
+}
+
+tr {
+	padding: 0px;
+}
+
+td {
+	padding-left: 10px;
+	padding-bottom: 0px;
+	vertical-align:bottom;
+}
+
+span {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+#text {
+	padding-bottom: 5px;
+}
+
+
+
+

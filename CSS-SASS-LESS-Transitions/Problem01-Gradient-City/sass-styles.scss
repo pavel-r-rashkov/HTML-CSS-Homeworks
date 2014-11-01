@@ -1,0 +1,243 @@
+* {padding: 0px; margin: 0px;}
+
+$sectionDistance: 20px;
+$articleDistance: $sectionDistance / 2;
+$gradientBorderRadius: 20px;
+
+$borderColor: #959595;
+$backgroundColor: #808080;
+
+$purple: #320332;
+$blue: #0000A9;
+$green: #033203;
+$yellow: #F5F503;
+$orange: #EB9303;
+$red: #CD0303;
+$gradEndColor: #FFF;
+
+@mixin borderDouble {
+	border: 3px double $borderColor;
+}
+
+@mixin gradientTop($startColor, $endColor) {
+	background: -webkit-linear-gradient($startColor, $endColor);
+    background: -o-linear-gradient($startColor, $endColor); 
+    background: -moz-linear-gradient($startColor, $endColor); 
+    background: linear-gradient($startColor, $endColor);
+}
+
+@mixin gradientLeft($startColor, $endColor) {
+  background: -webkit-linear-gradient(left, $startColor , $endColor); 
+  background: -o-linear-gradient(right, $startColor, $endColor);
+  background: -moz-linear-gradient(right, $startColor, $endColor);
+  background: linear-gradient(to right, $startColor , $endColor);
+}
+
+@mixin gradientLeftTop($startColor, $endColor) {
+  background: -webkit-linear-gradient(left top, $startColor , $endColor); 
+  background: -o-linear-gradient(bottom right, $startColor, $endColor);
+  background: -moz-linear-gradient(bottom right, $startColor, $endColor);
+  background: linear-gradient(to bottom right, $startColor , $endColor);
+}
+
+@mixin gradientRadial($startColor, $endColor) {
+  background: -webkit-radial-gradient($startColor, $endColor);
+  background: -o-radial-gradient($startColor, $endColor);
+  background: -moz-radial-gradient($startColor, $endColor);
+  background: radial-gradient($startColor, $endColor);
+}
+
+body {
+	@include gradientTop($backgroundColor, #FFF);
+}
+
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+	@include borderDouble;
+	background: #FFF;
+	font-family: Tahoma;
+	color: $borderColor;
+}
+
+#wrapper>header, section, footer {
+	margin: $sectionDistance;
+	@include borderDouble;
+	padding: $sectionDistance;
+}
+
+#wrapper>header {
+	h1 {
+		font-size: 40px;
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+header, footer{
+	text-align: center;
+}
+
+nav {
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			@include borderDouble;
+			padding: 10px 20px;
+			margin-right: 60px;
+		}
+
+		li:last-child {
+			margin-right: 0px;
+		}
+
+		a {
+			text-decoration: none;
+			color: $borderColor;
+		}
+
+		li:hover {
+			@include gradientTop($backgroundColor, #FFF);
+			border-top: none;
+		}
+
+		li:hover>a {
+			color: #FFF;
+			cursor: default;
+		}
+	}
+}
+
+footer {
+	ul {
+		list-style: none;
+	}
+}
+
+section, footer {
+	h1, h3 {
+		font-size: 25px;
+		font-weight: normal;
+		text-decoration: underline;
+		margin-bottom: 20px;
+	}
+
+	h2, ul>li>a {
+		color: $borderColor;
+		font-size: 20px;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+	h2 {
+		margin-top: 20px;
+	}
+}
+
+article {
+	margin-top: $articleDistance;
+	border: 2px solid $borderColor;
+}
+
+.innerContainer {
+	margin: $sectionDistance;
+	overflow: hidden;
+}
+
+.innerContainer {
+	div {
+		float:left;
+		width: (1 / 6) * 100%;
+		height: 180px;
+		border-radius: $gradientBorderRadius;
+	}
+}
+
+.linear {
+
+	article:nth-child(2) {
+		.purple {
+			@include gradientTop($purple, $gradEndColor);
+		}
+		.blue {
+			@include gradientTop($blue, $gradEndColor);
+		}
+		.green {
+			@include gradientTop($green, $gradEndColor);
+		}
+		.yellow {
+			@include gradientTop($yellow, $gradEndColor);
+		}
+		.orange {
+			@include gradientTop($orange, $gradEndColor);
+		}
+		.red {
+			@include gradientTop($red, $gradEndColor);
+		}
+	}
+
+	article:nth-child(3) {
+		.purple {
+			@include gradientLeft($purple, $gradEndColor);
+		}
+		.blue {
+			@include gradientLeft($blue, $gradEndColor);
+		}
+		.green {
+			@include gradientLeft($green, $gradEndColor);
+		}
+		.yellow {
+			@include gradientLeft($yellow, $gradEndColor);
+		}
+		.orange {
+			@include gradientLeft($orange, $gradEndColor);
+		}
+		.red {
+			@include gradientLeft($red, $gradEndColor);
+		}
+	}
+
+	article:nth-child(4) {
+		.purple {
+			@include gradientLeftTop($purple, $gradEndColor);
+		}
+		.blue {
+			@include gradientLeftTop($blue, $gradEndColor);
+		}
+		.green {
+			@include gradientLeftTop($green, $gradEndColor);
+		}
+		.yellow {
+			@include gradientLeftTop($yellow, $gradEndColor);
+		}
+		.orange {
+			@include gradientLeftTop($orange, $gradEndColor);
+		}
+		.red {
+			@include gradientLeftTop($red, $gradEndColor);
+		}
+	}
+}
+
+.radial {
+	article {
+		.purple {
+			@include gradientRadial($purple, $gradEndColor);
+		}
+		.blue {
+			@include gradientRadial($blue, $gradEndColor);
+		}
+		.green {
+			@include gradientRadial($green, $gradEndColor);
+		}
+		.yellow {
+			@include gradientRadial($yellow, $gradEndColor);
+		}
+		.orange {
+			@include gradientRadial($orange, $gradEndColor);
+		}
+		.red {
+			@include gradientRadial($red, $gradEndColor);
+		}
+	}
+}

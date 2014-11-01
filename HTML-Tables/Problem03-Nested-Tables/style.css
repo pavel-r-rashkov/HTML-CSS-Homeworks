@@ -1,0 +1,27 @@
+table {
+	border: solid 1px;
+	font-family: arial;
+}
+
+thead {
+	border: solid 1px;
+	font-size: 60px;	
+	text-align: left;
+}
+
+img {
+	padding:  24px 8px;
+}
+
+td {
+	border: solid 1px;
+}
+
+th {
+	border: solid 1px;
+	padding: 10px;
+}
+
+#inner {
+	padding: 8px;
+}

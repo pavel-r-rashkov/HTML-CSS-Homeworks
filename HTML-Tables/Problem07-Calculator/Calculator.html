@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<title>Calculator</title>
+
+	<script type="text/javascript">
+
+		function addSymbol(buttonValue){
+			var inputField = document.getElementById('inputExpression');
+			inputField.value += buttonValue;
+		}
+
+		function clearField(){
+			var inputField = document.getElementById('inputExpression');
+			inputField.value = inputField.value.substring(0, inputField.value.length - 1);
+		}
+
+		function calculate(){
+			var inputField = document.getElementById('inputExpression');
+			inputField.value = eval(inputField.value);
+
+			if (inputField.value == "undefined") {
+				inputField.value = "";
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="4"><input type="text" id="inputExpression"></td>
+		</tr>
+		<tr>
+			<td><button onclick="addSymbol(1)">1</button></td>
+			<td><button onclick="addSymbol(2)">2</button></td>
+			<td><button onclick="addSymbol(3)">3</button></td>
+			<td><button onclick="addSymbol('+')">+</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="addSymbol(4)">4</button></td>
+			<td><button onclick="addSymbol(5)">5</button></td>
+			<td><button onclick="addSymbol(6)">6</button></td>
+			<td><button onclick="addSymbol('-')">-</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="addSymbol(7)">7</button></td>
+			<td><button onclick="addSymbol(8)">8</button></td>
+			<td><button onclick="addSymbol(9)">9</button></td>
+			<td><button onclick="addSymbol('*')">*</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="clearField()">C</button></td>
+			<td><button onclick="addSymbol(0)">0</button></td>
+			<td><button onclick="calculate()">=</button></td>
+			<td><button onclick="addSymbol('/')">/</button></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+table {
+	width: 254px;
+	height: 320px;
+	border-spacing: 1px;
+}
+
+td, table {
+	border: 1px solid black;
+}
+
+td {
+	width: 60px;
+	height: 58px;
+	padding: 1px;
+}
+
+button {
+	margin: 0;
+	width: 58px;
+	height: 58px;
+	font-size: 28px;
+}
+
+input {
+	width: 243px;
+	height: 54px;
+	margin: 0;
+	font-size: 28px;
+	text-align: right;
+	letter-spacing: 4px;
+}

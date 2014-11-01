@@ -1,0 +1,105 @@
+* {padding: 0px; margin: 0px;}
+
+footer {
+	background: #234465;
+	overflow: hidden;
+	padding-top: 15px;
+}
+
+section {
+	float: left;
+	margin-top: 25px;
+	padding-top: 20px;
+}
+
+#apply, #fastTrack {
+	border: 2px solid #FF9C00;
+	color: white;
+	background: #234465;
+	width: 150px;
+	height: 40px;
+	margin-bottom: 10px;
+	margin-left: 140px;
+}
+
+#buttons {
+	width: 320px;
+}
+
+#about {
+	width: 200px;
+}
+
+#friends {
+	width: 200px;
+}
+
+#learningSystem {
+	width: 250px;
+}
+
+#facebook {
+	padding-top: 0px;
+	margin-bottom: 40px;
+	margin-left: 50px;
+}
+
+section ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+section ul li {
+	margin: 4px 0px;
+}
+
+section h2 {
+	font-size: 12px;
+	font-family: Arial;
+	color: #FF9C00;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+li a{
+	font-size: 12px;
+	font-family: Arial;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+#twitter, #faceB, #google {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #9BADBB;
+	border-radius: 2px;
+	background-size: 28px 28px;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	margin-top: 20px;
+}
+
+#twitter {
+	background-image: url(images/twitter.png);
+}
+
+#faceB {
+	background-image: url(images/facebook.png);
+}
+
+#google {
+	background-image: url(images/google.png);
+}
+
+
+#socialButtons {
+	padding: 0px;
+	list-style: none;
+}
+
+#socialButtons li {
+	display: inline-block;
+	width: 35px;
+}

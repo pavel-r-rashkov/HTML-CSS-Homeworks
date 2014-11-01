@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Clock</title>
+    <link href="styles.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+
+	    function updateTransition() {
+	    	var d = new Date();
+	    	var seconds = d.getSeconds();
+	    	var minutes = d.getMinutes();
+	    	var hours = d.getHours();
+	    	
+	    	var secondsWrap = document.querySelector("div.secondsWrapper");
+		    secondsWrap.style.transform = "rotate(" + seconds * 6 + "deg)";
+
+		    var minutesWrap = document.querySelector("div.minutesWrapper");
+		    minutesWrap.style.transform = "rotate(" + ((minutes * 6) + seconds * 6 / 60) + "deg)";
+
+		    var hoursWrap = document.querySelector("div.hoursWrapper");
+		    hoursWrap.style.transform = "rotate(" + ((hours * 30) + minutes * 30 / 60) + "deg)";
+
+		    return;	    
+		}
+
+		var intervalID = window.setInterval(updateTransition, 1000);
+
+    </script>
+</head>
+<body>
+	<section>
+		<img src="images/clockface.jpg" id="face" alt="clock-face">
+		<div class="minutesWrapper">
+			<img src="images/arrow-minutes.png" id="arrowMinutes" alt="arrow-minutes">	
+		</div>
+		<div class="hoursWrapper">
+			<img src="images/arrow-hours.png" id="arrowHours" alt="arrow-hours">	
+		</div>
+		<div class="secondsWrapper">
+			<img src="images/arrow.png" id="arrowSeconds" alt="arrow-minutes">	
+		</div>
+	</section>
+</body>
+</html>

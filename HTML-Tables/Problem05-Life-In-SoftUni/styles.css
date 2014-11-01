@@ -1,0 +1,51 @@
+#outerTable {
+	width: 460px;
+	font-family: Arial;
+	font-size: 19px;
+}
+
+th, td, table {
+	border: 1px solid black;
+}
+
+tr, td {
+	height: 100px;
+	padding: 5px;
+}
+
+td {
+	width: 100px;
+}
+
+th {
+	font-size: 50px;
+	height: 108px;
+}
+
+.inner {
+	height: 50px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.right {
+	text-align: right;
+}
+
+.top {
+	vertical-align: top;
+}
+
+.bottom {
+	vertical-align: bottom;
+}
+
+.center {
+	text-align: center;
+}
+
+#beer {
+	font-size: 30px;
+}
+

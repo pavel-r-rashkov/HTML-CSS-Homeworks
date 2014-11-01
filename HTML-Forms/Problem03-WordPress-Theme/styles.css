@@ -1,0 +1,22 @@
+#logoText {
+	width: 340px;
+	height: 70px;
+}
+
+#logo {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	top: 13px;
+}
+
+#text {
+	height: 24px;
+}
+
+#searchWordpress {
+	position: relative;
+	top: 5px;
+}
+
+

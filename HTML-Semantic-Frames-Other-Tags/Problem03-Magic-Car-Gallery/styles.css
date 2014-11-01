@@ -1,0 +1,36 @@
+section {
+	width: 500px;
+	height: 190px;
+	background: black;
+	padding: 20px 30px;
+	border-radius: 15px;
+}
+
+h1 {
+	margin: 0px 0px 15px 0px;
+	font-size: 35px;
+	color: #F9C206;
+	font-family: Arial;
+	text-align: center;
+}
+
+ul {
+	margin-top: 0px;
+	float: right;
+	list-style: none;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: Verdana;
+	font-size: 20px;
+}
+
+iframe {
+	float: left;
+	width: 180px;
+	height: 120px; 
+	border: 2px solid #F9C206;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Calculator</title>
+
+		<script type="text/javascript">
+
+		</script>
+	</head>
+	<body>
+		<article>
+			<div id="menu">
+				<ul>
+					<li>View</li>
+					<li>Edit</li>
+					<li>Help</li>
+				</ul>
+			</div>
+			<div id="main">
+				<div id="wrapper">
+					<table>
+						<tr>
+							<td colspan="10" id="result" class="darkBorder"><span>0</span></td>
+						</tr>
+						<tr>
+							<td colspan="10" id="binary" class="darkBorder darkBackground">
+								<div class="bin"><span class="zero">0000</span><br><span class="num left">63</span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num left"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num left">47</span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num">32</span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num left">31</span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num left">15</span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num"></span></div>
+								<div class="bin"><span class="zero">0000</span><br><span class="num">0</span></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="3" class="darkBorder darkBackground">
+								<ul class="options">
+									<li><input type="radio" name="type"><label>Hex</label></li>
+									<li><input type="radio" name="type"><label>Dec</label></li>
+									<li><input type="radio" name="type"><label>Oct</label></li>
+									<li><input type="radio" name="type"><label>Bin</label></li>
+								</ul>
+							</td>
+							<td class="single darkBorder darkBackground"></td>
+							<td class="single darkBorder gradientBackground">Mod</td>
+							<td class="single lightBorder darkBackground bigFont">A</td>
+							<td class="single darkBorder darkBackground">MC</td>
+							<td class="single darkBorder darkBackground">MR</td>
+							<td class="single darkBorder darkBackground">MS</td>
+							<td class="single darkBorder darkBackground">M+</td>
+							<td class="single darkBorder darkBackground">M-</td>
+						</tr>
+						<tr>
+							<td class="single darkBorder gradientBackground">(</td>
+							<td class="single darkBorder gradientBackground">)</td>
+							<td class="single lightBorder darkBackground bigFont">B</td>
+							<td class="single darkBorder gradientBackground">&#x2190;</td>
+							<td class="single darkBorder gradientBackground">CE</td>
+							<td class="single darkBorder gradientBackground">C</td>
+							<td class="single darkBorder gradientBackground">&#x00B1;</td>
+							<td class="single lightBorder darkBackground">&#x221A;</td>
+						</tr>
+						<tr>
+							<td class="single darkBorder gradientBackground">RoL</td>
+							<td class="single darkBorder gradientBackground">RoR</td>
+							<td class="single lightBorder darkBackground bigFont">C</td>
+							<td class="single darkBorder lightBackground bigFont">7</td>
+							<td class="single darkBorder lightBackground bigFont">8</td>
+							<td class="single darkBorder lightBackground bigFont">9</td>
+							<td class="single darkBorder gradientBackground">/</td>
+							<td class="single lightBorder darkBackground">%</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="3" class="darkBorder darkBackground">
+								<ul class="options">
+									<li><input type="radio" name="type"><label>Qword</label></li>
+									<li><input type="radio" name="type"><label>Dword</label></li>
+									<li><input type="radio" name="type"><label>Word</label></li>
+									<li><input type="radio" name="type"><label>Byte</label></li>
+								</ul>
+							</td>
+							<td class="single darkBorder gradientBackground">Or</td>
+							<td class="single darkBorder gradientBackground">Xor</td>
+							<td class="single lightBorder darkBackground bigFont">D</td>
+							<td class="single darkBorder lightBackground bigFont">4</td>
+							<td class="single darkBorder lightBackground bigFont">5</td>
+							<td class="single darkBorder lightBackground bigFont">6</td>
+							<td class="single darkBorder gradientBackground">*</td>
+							<td class="single lightBorder darkBackground">1/x</td>
+						</tr>
+						<tr>
+							<td class="single darkBorder gradientBackground">Lsh</td>
+							<td class="single darkBorder gradientBackground">Rsh</td>
+							<td class="single lightBorder darkBackground bigFont">E</td>
+							<td class="single darkBorder lightBackground bigFont">1</td>
+							<td class="single darkBorder lightBackground bigFont">2</td>
+							<td class="single darkBorder lightBackground bigFont">3</td>
+							<td class="single darkBorder gradientBackground">-</td>
+							<td rowspan="2" class="single darkBorder gradientBackground equalFont">=</td>
+						</tr>
+						<tr>
+							<td class="single darkBorder gradientBackground">Not</td>
+							<td class="single darkBorder gradientBackground">And</td>
+							<td class="single lightBorder darkBackground bigFont">F</td>
+							<td colspan="2" class="single darkBorder lightBackground bigFont">0</td>
+							<td class="single lightBorder darkBackground">.</td>
+							<td class="single darkBorder gradientBackground">+</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Flight order</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+	<div id="main">
+		<h1>Flight order</h1>
+		<div id="left">
+			<div id="leftWrapper">
+				<label>From</label><br>
+				<select class="selection" id="from">
+					<option selected disabled>enter a city</option>
+					<option>London</option>
+					<option>Berlin</option>	
+				</select><br>
+				<label>Departure date</label><br>
+				<input type="date" class="date"><br>
+				<label>return date</label><br>
+				<input type="date" class="date" id="return"><br>
+				<label>12+</label>
+				<label>2-12</label>
+				<label>0-2</label><br>
+				<input type="number" class="number">
+				<input type="number" class="number rightNumber">
+				<input type="number" class="number rightNumber">
+			</div>
+		</div>
+		<div id="right">
+			<div id="rightWrapper">
+				<label>To</label><br>
+				<select class="selection" id="to">
+					<option selected disabled>enter a city</option>
+					<option>London</option>
+					<option>Berlin</option>	
+				</select><br>
+				<input type="checkbox"><label>Prefer directs</label><br>
+				<label>Time Interval</label><br>
+				<input type="time" class="time">
+				<input type="time" class="time"><br>
+				<label>Time Interval</label><br>
+				<input type="time" class="time">
+				<input type="time" class="time"><br>
+				<label>Choose class</label><br>
+				<select class="selection" id="economy">
+					<option selected>Economy</option>
+					<option>Business</option>
+				</select><br>
+				<input type="submit" value="Search" id="submit">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

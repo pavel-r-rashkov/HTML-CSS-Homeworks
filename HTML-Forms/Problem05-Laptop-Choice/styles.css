@@ -1,0 +1,105 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+#main {
+	width: 675px;
+	height: 550px;
+	overflow: hidden;
+	color: #2C425A;
+	font-family: Arial;
+}
+
+h1 {
+	font-size: 23px;
+	margin: 10px;
+}
+
+#leftWrapper {
+	float: left;
+	width: 75%;
+}
+
+#rightWrapper {
+	float: left;
+	width: 25%;
+}
+
+#left {
+	padding: 10px;
+}
+
+#right {
+	padding-top: 3px;
+}
+
+.laptop {
+	height: 170px;
+	width: 140px;
+	padding: 5px;
+	float: left;
+	border: 1px solid #E0F1FB;
+	border-top-left-radius: 8px; 
+	border-top-right-radius: 8px; 
+	border-bottom-left-radius: 8px;
+	background: #FFFFFF;
+	position: relative; 
+	margin: 5px;
+}
+
+.model {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.modelDetails {
+	font-size: 13px;
+}
+
+.price {
+	width: 90px;
+	height: 25px;
+	position: absolute;
+	top: 145px;
+	left: 60px;
+	border-top-left-radius: 8px;
+	background: #2C425A; 
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+
+img {
+	width: 140px; 
+	height: 85px;
+}
+
+#sliders {
+	width: 99%;
+	height: 420px;
+	border: 1px solid #E0F1FB;
+	background: #F7FCFF;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.min {
+	float: left;
+	text-align: left;
+	padding-left: 4px;
+	font-size: 12px;
+}
+
+.max {
+	float: right;
+	text-align: right;
+	padding-right: 4px;
+	font-size: 12px;
+}
+
+input {
+	width: 160px;
+	margin-bottom: 15px;
+}
+

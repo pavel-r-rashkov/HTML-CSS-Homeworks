@@ -1,0 +1,92 @@
+#outerTable {
+	width: 460px;
+	font-family: Arial;
+	font-size: 19px;
+}
+
+th, td, table {
+	border: 1px solid black;
+}
+
+tr {
+	height: 110px;
+	padding: 5px;
+}
+
+td {
+	padding: 5px;
+	width: 100px;
+}
+
+th {
+	padding: 5px;
+}
+
+.inner {
+	height: 57px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.button {
+	color: blue;
+	font-size: 18px;
+}
+
+#beer {
+	font-size: 28px;
+	text-align: right;
+}
+
+.small {
+	font-size: 13px;
+}
+
+.big {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.halfButton {	
+	width: 100px;
+	height: 46px;
+}
+
+.oneButton {
+	width: 100px;
+	height: 98px;
+}
+
+.twoButton {
+	width: 208px;
+	height: 98px;
+}
+
+.threeButton {
+	width: 328px;
+	height: 98px;
+}
+
+.fourButton {
+	width: 436px;
+	height: 98px;
+}
+
+.indent {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#smallTop {
+	margin-bottom: 3px;
+}
+
+#smallBottom {
+	margin-top: 3px;
+}
+
+form {
+	margin: 0;
+}

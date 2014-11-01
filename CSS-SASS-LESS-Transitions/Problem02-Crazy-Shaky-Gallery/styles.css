@@ -1,0 +1,228 @@
+#container {
+	background: #BAB9B9;
+	padding: 10px;
+	width: 530px;
+	position: relative;
+}
+
+section {
+	width: 410px;
+	height: 430px;
+	background: #DDDDDD;
+	padding: 20px 60px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 1px #888888;
+}
+
+table {
+	margin: 3px auto;
+	position: relative;
+	border-spacing: 0;
+}
+
+td {
+	padding: 0;
+}
+
+table tr td:last-child input {
+	margin-right: 0px;
+}
+
+table tr:last-child input {
+	margin-bottom: 0px;
+}
+
+.image {
+	width: 120px;
+	height: 90px;	
+	margin: 0px 5px 5px 0px;
+	border: 5px solid white;
+	cursor: pointer;
+}
+
+#car1 {
+	background: url(images/car1.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car2 {
+	background: url(images/car2.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car3 {
+	background: url(images/car3.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car4 {
+	background: url(images/car4.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car5 {
+	background: url(images/car5.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car6 {
+	background: url(images/car6.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car7 {
+	background: url(images/car7.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car8 {
+	background: url(images/car8.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car9 {
+	background: url(images/car9.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car10 {
+	background: url(images/car10.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car11 {
+	background: url(images/car11.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+#car12 {
+	background: url(images/car12.jpg) no-repeat;
+	background-size: 120px 90px
+}
+
+.image:hover  {
+	animation: myFirst 0.3s linear;
+	-webkit-animation: myFirst 0.3s linear;
+}
+
+.image:focus {
+	position: absolute;
+	animation: mySecond 3s linear;
+	-webkit-animation: mySecond 3s linear;
+}
+
+#car1:focus {
+	left: 0px;
+	top: 0px;
+}
+
+#car2:focus {
+	left: 135px;
+	top: 0px;
+}
+
+#car3:focus {
+	left: 270px;
+	top: 0px;
+}
+
+#car4:focus {
+	left: 0px;
+	top: 107px;
+}
+
+#car5:focus {
+	left: 135px;
+	top: 107px;
+}
+
+#car6:focus {
+	left: 270px;
+	top: 107px;
+}
+
+#car7:focus {
+	left: 0px;
+	top: 214px;
+}
+
+#car8:focus {
+	left: 135px;
+	top: 214px;
+}
+
+#car9:focus {
+	left: 270px;
+	top: 214px;
+}
+
+#car10:focus {
+	left: 0px;
+	top: 321px;
+}
+
+#car11:focus {
+	left: 135px;
+	top: 321px;
+}
+
+#car12:focus {
+	left: 270px;
+	top: 321px;
+}
+
+
+
+@keyframes myFirst {
+    20% {transform: rotate(5deg)}
+    40% {transform: rotate(-5deg)}
+    60% {transform: rotate(5deg)}
+    80% {transform: rotate(-5deg)}  
+}
+
+@-webkit-keyframes myFirst {
+    20% {transform: rotate(5deg)}
+    40% {transform: rotate(-5deg)}
+    60% {transform: rotate(5deg)}
+    80% {transform: rotate(-5deg)}  
+}
+
+@keyframes mySecond {
+	
+	20% {
+		transform: scale(2, 2);
+		left: 170px;
+		top: 120px;
+	}
+	40% {transform: scale(2, 2) rotate(-360deg)}
+	80% {
+		transform: scale(2, 2) rotate(0deg);
+		left: 170px;
+		top: 120px;
+	}
+	90% {
+		transform: scale(2, 2) rotate(0deg);
+		left: 170px;
+		top: 120px;
+	}
+}
+
+@-webkit-keyframes mySecond {
+	
+	20% {
+		transform: scale(2, 2);
+		left: 170px;
+		top: 120px;
+	}
+	40% {transform: scale(2, 2) rotate(-360deg)}
+	80% {
+		transform: scale(2, 2) rotate(0deg);
+		left: 170px;
+		top: 120px;
+	}
+	90% {
+		transform: scale(2, 2) rotate(0deg);
+		left: 170px;
+		top: 120px;
+	}
+}
